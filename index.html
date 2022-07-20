@@ -22,14 +22,17 @@
 			</div>
 			<div class = "information">
 				<div class = "text">About</div>
-				The demonstration video shows a couple words chosen from the list of about 2300 answers and the program attempting to guess them by randomly picking from the list of about 13000 valid words. The time.sleep() function was used so that we may have an easier time seeing the output. As the list of possible words that meet the conditions continues to decrease, the program's chances of guessing the answer increases.<br><br>
+				From the previous example, we might end up with the following possible answers:<br><br>
+				<li>maker, taker, baker, faker, mater, poker</li><br>
+
+				The program will determine the letters of interest as m, a, k, t, o, b, f, p. Notice that the program often prioritizes and chooses words that contain the first few letters. If it is unable to match it all, it will continue to look for words with letters down the list. How it chooses the letters is it iterates through each column and finds the most frequently appearing letter. In this case m is the most frequent in column 1, a in column 2, k in column 3. Column 4 and 5 are skipped because there is no uncertainty among those columns. Again it goes through column 1 and finds t, column 2 and finds o. Column 3 is finished since we already found t. The program continues to do this until there are no more letters of interest.<br><br>
 				The source code and DataFrames containing the recorded info can be found <b><a href = "https://github.com/ma562/random_wordle_solver_results" target = "_blank">here</a></b>.<br><br>
-				Information is also printed to the terminal:<br>
-				<ul class = "shift">
-					<li>Bits of information - The number of times we halved the list of possibilities</li><br>
-					<li>Number of possibilites left - How many words that fit the previously accumulated conditions</li><br>
-					<li>Chances of guessing correctly - Chance of guessing correctly if we blindly choose from the list of possibilities</li>
-				</ul>
+			</div>
+		</div>
+		<br>
+		<div class = "two_info">
+			<div class = "twos">
+				<div class = "text">Guesses Made in 2 Attempts: 18</div>
 			</div>
 		</div>
 	</body>
