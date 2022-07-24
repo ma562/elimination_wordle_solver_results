@@ -119,3 +119,59 @@
 	padding: 10px;
 	text-align: justify;
 }
+
+.guess_hist2 {
+	top: 70px;
+	left: 1%;
+	position: relative;
+	width: 15%;
+}
+
+.bits2 {
+	top: 70px;
+	left: 0%;
+	position: relative;
+	width: 10.5%;
+}
+
+.pos2 {
+	top: 70px;
+	right: 1%;
+	position: relative;
+	width: 10.2%;
+}
+
+.chance2 {
+	top: 70px;
+	right: 2%;
+	position: relative;
+	width: 10.6%;
+}
+
+@media (max-width: 1000px){
+	.information {
+		padding: 15px;
+	}
+
+	.twos, .guess_hist2, .bits2, .pos2, .chance2, .vid1, .information {
+		flex: 100%;
+		left: 0%;
+		right: 0%;
+		margin-bottom: 70px;
+	}
+
+	.top_info {
+		top: 80px;
+	}
+	.navbar .logo a{
+		color: #fff;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	.navbar .menu li a{
+		font-size: 12px;
+	}
+	.text {
+		font-size: 18px;
+	}
+}

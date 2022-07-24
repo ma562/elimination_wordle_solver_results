@@ -25,14 +25,45 @@
 				From the previous example, we might end up with the following possible answers:<br><br>
 				<li>maker, taker, baker, faker, mater, poker</li><br>
 
-				The program will determine the letters of interest as m, a, k, t, o, b, f, p. Notice that the program often prioritizes and chooses words that contain the first few letters. If it is unable to match it all, it will continue to look for words with letters down the list. How it chooses the letters is it iterates through each column and finds the most frequently appearing letter. In this case m is the most frequent in column 1, a in column 2, k in column 3. Column 4 and 5 are skipped because there is no uncertainty among those columns. Again it goes through column 1 and finds t, column 2 and finds o. Column 3 is finished since we already found t. The program continues to do this until there are no more letters of interest.<br><br>
+				The program will determine the letters to eliminate as m, a, k, t, o, b, f, p. Notice that the program often prioritizes and chooses words that contain the first few letters. If it is unable to match it all, it will continue to look for words with letters down the list. How it chooses the letters is it iterates through each column and finds the most frequently appearing letter. In this case m is the most frequent in column 1, a in column 2, k in column 3. Column 4 and 5 are skipped because there is no uncertainty among those columns. Again it goes through column 1 and finds t, column 2 and finds o. Column 3 is finished since we already found t. The program continues to do this until there are no more letters to eliminate.<br><br>
 				The source code and DataFrames containing the recorded info can be found <b><a href = "https://github.com/ma562/random_wordle_solver_results" target = "_blank">here</a></b>.<br><br>
 			</div>
 		</div>
 		<br>
 		<div class = "two_info">
 			<div class = "twos">
-				<div class = "text">Guesses Made in 2 Attempts: 18</div>
+				<div class = "text">Guesses Made in 2 Attempts: 12</div>
+				Considering that the guesses are no longer chosen from the list of possibilities at random, the only way in which the program could have guessed the answer when the list of possibilities is greater than one is if the guess to eliminate the length of possiblities turned out to be the answer as well.<br><br>
+				<b>Bits of information collected</b>
+				<ul class = "shift">
+					<li>Attempt 1 Avg: 7.976 bits</li>
+					<li>Attempt 1 Max: 13.661</li>
+					<li>Attempt 1 Min: 5.579</li>
+				</ul><br>
+				<b>Number of possibilities left</b>
+				<ul class = "shift">
+					<li>Attempt 1 Avg: 117 words</li>
+					<li>Attempt 1 Max: 271 words</li>
+					<li>Attempt 1 Min: 1</li>
+				</ul><br>
+				<b>Chances of randomly guessing correctly</b>
+				<ul class = "shift">
+					<li>Attempt 1 Avg: 11.76 %</li>
+					<li>Attempt 1 Max: 100 %</li>
+					<li>Attempt 1 Min: 0.369 %</li>
+				</ul>
+			</div>
+			<div class = "guess_hist2">
+				<img src = "images/guess_history.png" class = "pic" width = "100%" alt = "">
+			</div>
+			<div class = "bits2">
+				<img src = "images/bits.png" class = "pic" width = "100%" alt = "">
+			</div>
+			<div class = "pos2">
+				<img src = "images/num_pos.png" class = "pic" width = "100%" alt = "">
+			</div>
+			<div class = "chance2">
+				<img src = "images/chance.png" class = "pic" width = "100%" alt = "">
 			</div>
 		</div>
 	</body>
