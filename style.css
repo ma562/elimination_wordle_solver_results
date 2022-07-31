@@ -177,12 +177,38 @@
 	width: 47%;
 }
 
+.fours {
+	position: relative;
+	left: 2%;
+	background: #787c7f;
+	width: 48%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	color: #00274c;
+	border-radius: 15px;
+	padding: 10px;
+	text-align: justify;
+}
+
+.fives {
+	position: relative;
+	left: 2%;
+	background: #c8b653;
+	width: 48%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	color: #00274c;
+	border-radius: 15px;
+	padding: 10px;
+	text-align: justify;
+}
+
 @media (max-width: 1000px){
 	.information {
 		padding: 15px;
 	}
 
-	.twos, .guess_hist2, .bits2, .pos2, .chance2, .vid1, .information {
+	.fives, .fours, .threes_2, .threes, .twos, .guess_hist2, .bits2, .pos2, .chance2, .vid1, .information {
 		flex: 100%;
 		left: 0%;
 		right: 0%;
